@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: LightBlue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopassignment4.StudentHomeController">
+   <children>
+      <Separator layoutX="-2.0" layoutY="70.0" prefHeight="4.0" prefWidth="600.0" style="-fx-background-color: Black;" />
+      <Label layoutX="168.0" layoutY="20.0" text="Student Dashboard">
+         <font>
+            <Font name="Calibri Bold" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ReturnIV" fitHeight="36.0" fitWidth="38.0" layoutX="-2.0" layoutY="-1.0" onMouseClicked="#Return" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../return.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="244.0" layoutY="74.0" text="Student Profile">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="106.0" text="Name" />
+      <Label fx:id="NameLabel" layoutX="158.0" layoutY="106.0" prefHeight="17.0" prefWidth="141.0" />
+      <Label layoutX="82.0" layoutY="130.0" text="Enrollment" />
+      <Label fx:id="EnrollmentLabel" layoutX="159.0" layoutY="130.0" prefHeight="17.0" prefWidth="141.0" />
+      <Label layoutX="82.0" layoutY="154.0" text="Email" />
+      <Label fx:id="EmailLabel" layoutX="159.0" layoutY="154.0" prefHeight="17.0" prefWidth="141.0" />
+      <Label layoutX="82.0" layoutY="178.0" text="Password" />
+      <Label fx:id="PasswordLabel" layoutX="158.0" layoutY="178.0" prefHeight="17.0" prefWidth="141.0" />
+      <TableView fx:id="TimeTableGV" layoutY="215.0" prefHeight="185.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="dayColumn" text="Day" prefWidth="100.0"/>
+            <TableColumn fx:id="timeColumn" text="Time" prefWidth="100.0"/>
+            <TableColumn fx:id="courseColumn" text="Course" prefWidth="100.0"/>
+            <TableColumn fx:id="sectionColumn" text="Section" prefWidth="100.0"/>
+            <TableColumn fx:id="roomColumn" text="Room" prefWidth="100.0"/>
+            <TableColumn fx:id="teacherColumn" text="Teacher" prefWidth="100.0"/>
+         </columns>
+      </TableView>
+      <Button fx:id="GenerateTimeTableButton" layoutX="464.0" layoutY="188.0" mnemonicParsing="false" onAction="#GenerateTimeTable" text="Generate TimeTable" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="196.0" style="-fx-background-color: LightBlue; -fx-border-color: Black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopassignment4.AdminSidebarController">
+   <children>
+      <Button fx:id="EditTTButton" layoutY="34.0" mnemonicParsing="false" onAction="#OpenEditTT" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: LightGrey; -fx-border-color: black;" text="Edit/View TimeTable" />
+      <Button fx:id="AddTeacherButton" layoutY="68.0" mnemonicParsing="false" onAction="#OpenAddTeacher" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: LightGrey; -fx-border-color: black;" text="Add Teacher" />
+      <Button fx:id="AddSectionButton" layoutY="102.0" mnemonicParsing="false" onAction="#OpenAddSection" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: LightGrey; -fx-border-color: black;" text="Add Section" />
+      <Button fx:id="AddCourseButton" layoutY="136.0" mnemonicParsing="false" onAction="#OpenAddCourse" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: LightGrey; -fx-border-color: black;" text="Add Course" />
+      <Button fx:id="BackButton" layoutY="372.0" mnemonicParsing="false" onAction="#GoBack" style="-fx-border-color: black;" text="Back" />
+      <Button fx:id="DashboardButton" mnemonicParsing="false" onAction="#OpenDashboard" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: LightGrey; -fx-border-color: black;" text="Dashboard" />
+      <Button fx:id="AddRoomButton" layoutY="170.0" mnemonicParsing="false" onAction="#OpenAddRoom" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: LightGrey; -fx-border-color: black;" text="Add Rooms" />
+      <Button fx:id="AddStudentButton" layoutY="204.0" mnemonicParsing="false" onAction="#OpenAddStudent" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: LightGrey; -fx-border-color: black;" text="Add Student" />
+   </children>
+</Pane>
